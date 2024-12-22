@@ -1,0 +1,5 @@
+artist_count
+released_year, released_month, released_day
+in_spotify_playlists, in_apple_playlists, in_deezer_playlists
+bpm, key, mode
+danceability_%, valence_%, energy_%, acousticness_%, instrumentalness_%, liveness_%, speechiness_%
