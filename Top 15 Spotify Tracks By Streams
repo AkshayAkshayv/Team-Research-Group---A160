@@ -1,0 +1,9 @@
+# Plot the top 15 tracks
+ggplot(top_tracks, aes(x = reorder(track_name, -streams), y = streams)) +
+  geom_bar(stat = "identity", fill = "steelblue") +
+  labs(
+    title = "Top 15 Spotify Tracks by Streams",
+    x = "Track Name",
+    y = "Total Streams",
+    caption = "Data Source: Spotify 2023 Dataset"
+  )
