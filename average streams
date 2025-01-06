@@ -1,0 +1,14 @@
+ggplot(agg_data, aes(x = danceability_bin, y = avg_streams)) +
+  geom_bar(stat = "identity", fill = "steelblue") +
+  labs(
+    title = "Average Streams for Different Danceability Levels",
+    x = "Danceability (%)",
+    y = "Average Streams",
+    caption = "Data Source: Spotify 2023 Dataset"
+  ) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(hjust = 0.5, face = "bold", size = 14),
+    axis.text.x = element_text(angle = 45, hjust = 1, size = 10),
+    axis.title = element_text(size = 12)
+  )
