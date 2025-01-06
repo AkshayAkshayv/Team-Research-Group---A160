@@ -1,0 +1,10 @@
+# Valence vs Streams
+ggplot(spotify, aes(x = valence_., y = streams)) +
+  geom_point(color = "orange", alpha = 0.6, size = 3) +
+  geom_smooth(method = "lm", color = "red") +
+  labs(
+    title = "Valence vs Streams with Regression Line",
+    x = "Valence (%)",
+    y = "Streams",
+    caption = "Data Source: Spotify 2023 Dataset"
+  )
