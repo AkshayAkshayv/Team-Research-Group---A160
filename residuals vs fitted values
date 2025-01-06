@@ -1,0 +1,14 @@
+ggplot(data = residuals_data, aes(x = Fitted, y = Residuals)) +
+  geom_point(color = "blue", alpha = 0.6, size = 3) +
+  labs(
+    title = "Residuals vs Fitted Values",
+    x = "Fitted Values",
+    y = "Residuals",
+    caption = "Linear Regression Residual Analysis"
+  ) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(hjust = 0.5, face = "bold", size = 14),
+    axis.text = element_text(size = 10),
+    axis.title = element_text(size = 12)
+  )
