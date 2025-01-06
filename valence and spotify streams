@@ -1,0 +1,15 @@
+ggplot(data = spotify, aes(x = valence_., y = streams)) +
+  geom_point(color = "darkgreen", alpha = 0.6, size = 3) +
+  labs(
+    title = "Relationship Between Valence (Positivity) and Spotify Streams",
+    x = "Valence (%)",
+    y = "Total Streams",
+    caption = "Data Source: Spotify 2023 Dataset"
+  ) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(hjust = 0.5, face = "bold", size = 14),
+    axis.text = element_text(size = 10),
+    axis.title = element_text(size = 12)
+  )
+
